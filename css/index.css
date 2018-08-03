@@ -1,0 +1,181 @@
+body{
+
+}
+.header{
+  border-bottom: solid 5px #092c74;
+}
+#headerImg{
+  height:auto;
+  width:50%;
+  max-width:350px;
+  padding: 10px 0px 10px 10px;
+}
+.photo {
+  text-align: -webkit-center;
+  margin: auto;
+  margin-top: 20px;
+}
+
+#photo {
+  z-index: 1;
+  padding: 0px;
+  margin: auto;
+  margin-top: 20px;
+  border-radius: 25px;
+  max-height: 315px;
+  max-width: 200px;
+  min-height: 105px;
+  min-width: 100px;
+  box-shadow: 8px 8px 5px #000;
+  text-align: -webkit-center;
+  /*border: 5px solid #092c74;*/
+}
+.genInfo{
+  background-image: url("../img/bg2.jpg") !important;
+  background-repeat: no-repeat;
+  background-position: center center;
+  min-height: 550px;
+  max-height: 700px;
+  height: 100%;
+
+}
+#genInfo{
+  margin-top: 0px;
+  font-size: 20px;
+  font-weight: 600;
+  text-shadow: 2px 2px #000;
+  height: 25%;
+  color: #fff;
+-webkit-filter: brightness(1);filter: brightness(1.3);}
+.tint {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  width: auto;
+}
+.card {
+  border: 0px;
+  border-right: solid 1px #fff;
+  max-width: 600px;
+  margin: 0px;
+  text-align: center;
+  height: 100%;
+  margin-bottom: 50px;
+  background: transparent;
+}
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+i.fa, .fa-map-marker{
+  color: #092c74;
+  display: none;
+}
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+button:hover, a:hover {
+  opacity: 0.9;
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial;
+}
+
+div {
+  margin: 0px !important;
+  padding: 0px !important;
+}
+
+/* Style tab links */
+
+.tablink {
+  background-color: #092c74;
+  color: white;
+  float: left;
+  border: none;
+  border-left: solid 1px #fff;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 20%;
+}
+.tablink:hover {
+  background-color: #fc6719;
+
+
+}
+.cardtab {
+  background-color: #092c74;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 100%;
+}
+#profilePic{
+  align-self: center;
+  padding-left: 0%;
+  width: 25%;
+  height: auto;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+}
+#Biography h3, #Credentials h3, #Scholarships h3, #Schedule h3, #Service h3{
+text-align: center;
+margin-top: 50px;
+padding-top: 50px;
+text-indent: 0px;
+}
+
+#Biography,#Credentials,#Scholarships,#Schedule,#Service{
+  color: #000;
+  background-color: #fff;
+  padding: 0px 20px 0px 20px !important;
+  text-indent: 35px !important;
+}
+
+@media only screen and (max-width: 575px) {
+.card{
+  display: inline-block;
+}
+.tablink span{
+    display: none;
+  }
+  i.fa, .fa-map-marker{
+    color: #092c74;
+    display: block;
+    margin-bottom: 2px;
+  }
+  .iconText{
+    display: none !important;
+  }
+}

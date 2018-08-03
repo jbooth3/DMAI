@@ -1,0 +1,69 @@
+{
+  "type": "success",
+  "faculty": {
+    "jbooth3": {
+      "id": "jbooth3",
+      "profilePic": "./img/jbooth3.jpg",
+      "generalInfo": {
+        "fname": "Jonathan",
+        "lname": "Booth",
+        "title": "Tech Support Specialist",
+        "office": "UC 139",
+        "department": "Center for Instructional Development",
+        "college": "James M. Baker University Center",
+        "phone": "(678) 466-4195",
+        "email": "JonathanBooth@clayton.edu"
+      },
+      "biography": "I am passionate about technology and design",
+      "credentials": {
+        "education": "Bachelors",
+        "certifications": {
+
+        }
+      },
+      "schedule": {
+        "fall2018": "Course 101: M-F 8AM - 5PM",
+        "summer2018": "Course 250: W-F 8AM - 5PM"
+      },
+      "scholarship": {
+        "publications": "Story of My Life (In progress)",
+        "grants": "Hope"
+      },
+      "service": {
+        "public": "CoderDojo"
+      }
+    },
+    "jmays5": {
+      "id": "jmays5",
+      "profilePic": "./img/jmays5.jpg",
+      "generalInfo": {
+        "fname": "Justin",
+        "lname": "Mays",
+        "title": "Director",
+        "office": "UC 150",
+        "department": "Center for Instructional Development",
+        "college": "James M. Baker University Center",
+        "phone": "(678) 466-5544",
+        "email": "JustinMays@clayton.edu"
+      },
+      "biography": "I am passionate about teaching and learning",
+      "credentials": {
+        "education": "Doctorates",
+        "certifications": {
+
+        }
+      },
+      "schedule": {
+        "fall2018": "Course 401: M-F 8AM - 5PM",
+        "summer2018": "Course 500: T-F 8AM - 5PM"
+      },
+      "scholarship": {
+        "publications": "Managing CID (In progress)",
+        "grants": "Hope"
+      },
+      "service": {
+        "public": ""
+      }
+    }
+  }
+}

@@ -1,0 +1,277 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <!--bootstrap-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <!--ajax-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+
+  <!--script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/home.css">
+
+  <script>
+    function setCookie(cname, cvalue, exdays) {
+      var d = new Date();
+      d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+      var expires = "expires=" + d.toUTCString();
+      document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+      window.location = "file:///C:/Users/jbooth3/Documents/DNN/DMAI/myAjaxPage.html";
+    }
+  </script>
+  <script>
+    function getCookie(cname) {
+      var name = cname + "=";
+      var ca = document.cookie.split(';');
+      for (var i = 0; i < ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') {
+          c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+          return c.substring(name.length, c.length);
+        }
+      }
+      return "";
+    }
+
+    function checkCookie() {
+      var user = getCookie("faculty");
+      if (user != "") {
+        alert("Faculty: " + user);
+      } else {
+        user = prompt("Please enter the faculty members username:", "");
+        if (user != "" && user != null) {
+          setCookie("faculty", user, 365);
+        }
+      }
+    }
+  </script>
+
+</head>
+
+<body>
+  <!--header-->
+  <div class="row">
+    <div class="header col-sm-12">
+
+      <div class="col-md-3 .col-md-offset-3-">
+        <img src="#" alt="CSU logo" height="auto" width="350px">
+      </div>
+    </div>
+  </div>
+
+  <!--faculty listing-->
+  <div class="row">
+    <div class="col-md-12 Faculty">
+      <nav class="navbar navbar-expand-sm navbar-light bg-light">
+        <a class="navbar-header align-self-left">Faculty</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span >A-Z</span></button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav" style="text-align: -webkit-center;">
+            <li class="nav-item">
+              <a class="nav-link " data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">A<span class="sr-only">A</span></a>
+              <div class="dropdown-menu">
+                <button class="dropdown-item" onclick="loadDoc('jbooth3')">Jonathan Booth</button>
+                <div role="separator" class="dropdown-divider"></div>
+                <button class="dropdown-item" onclick="loadDoc('jmays5')">Justin Mays</button>
+                <div role="separator" class="dropdown-divider"></div>
+                <button class="dropdown-item" href="/faculty/aagyeman">Augustine Agyeman</button>
+                <div role="separator" class="dropdown-divider"></div>
+                <button class="dropdown-item" href="/faculty/sakhtar">Shakil Akhtar</button>
+                <div role="separator" class="dropdown-divider"></div>
+                <button class="dropdown-item" href="/faculty/dallen37">Denise Allen</button>
+                <div role="separator" class="dropdown-divider"></div>
+                <button class="dropdown-item" href="/faculty/jallen74">Jason Allen</button>
+                <div role="separator" class="dropdown-divider"></div>
+                <button class="dropdown-item" href="/faculty/bamsden">Brian Amsden</button>
+                <div role="separator" class="dropdown-divider"></div>
+                <button class="dropdown-item" href="/faculty/panderso">Patricia Anderson</button>
+                <div role="separator" class="dropdown-divider"></div>
+                <button class="dropdown-item" href="/faculty/tandre">Thomas Andre</button>
+                <div role="separator" class="dropdown-divider"></div>
+                <button class="dropdown-item" href="/faculty/dattick">Dennis Attick</button>
+                <div role="separator" class="dropdown-divider"></div>
+                <button class="dropdown-item" href="/faculty/aayuk">Augustine Ayuk</button>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">B<span class="sr-only">B</span></a>
+              <div class="dropdown-menu">
+                <button class="dropdown-item" href="/faculty/sbailey21">Scott Bailey</button>
+                <div role="separator" class="dropdown-divider"></div>
+                <button class="dropdown-item" href="/faculty/hbanke">Harold Banke</button>
+                <div role="separator" class="dropdown-divider"></div>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">C<span class="sr-only">C</span></a>
+              <div class="dropdown-menu">
+                <button class="dropdown-item" href="/faculty/jcampbel">John Campbell</button>
+                <div role="separator" class="dropdown-divider"></div>
+                <button class="dropdown-item" href="/faculty/kchaney7">Kevin Chaney</button>
+                <div role="separator" class="dropdown-divider"></div>
+                <button class="dropdown-item" href="/faculty/achang1">Annalisa Chang</button>
+                <div role="separator" class="dropdown-divider"></div>
+                <button class="dropdown-item" href="/faculty/pchang">Pearl Chang</button>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">D<span class="sr-only">D</span></a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="/faculty/jcampbel">Directory:facultyName</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">E<span class="sr-only">E</span></a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="/faculty/jcampbel">Directory:facultyName</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">F<span class="sr-only">F</span></a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="/faculty/jcampbel">Directory:facultyName</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">G<span class="sr-only">G</span></a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="/faculty/jcampbel">Directory:facultyName</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">H<span class="sr-only">H</span></a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="/faculty/jcampbel">Directory:facultyName</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">I<span class="sr-only">I</span></a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="/faculty/jcampbel">Directory:facultyName</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">J<span class="sr-only">J</span></a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="/faculty/jcampbel">Directory:facultyName</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">K<span class="sr-only">K</span></a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="/faculty/jcampbel">Directory:facultyName</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">L<span class="sr-only">L</span></a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="/faculty/jcampbel">Directory:facultyName</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">M<span class="sr-only">M</span></a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="/faculty/jcampbel">Directory:facultyName</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">N<span class="sr-only">N</span></a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="/faculty/jcampbel">Directory:facultyName</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">O<span class="sr-only">O</span></a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="/faculty/jcampbel">Directory:facultyName</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">P<span class="sr-only">P</span></a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="/faculty/jcampbel">Directory:facultyName</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Q<span class="sr-only">Q</span></a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="/faculty/jcampbel">Directory:facultyName</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">R<span class="sr-only">R</span></a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="/faculty/jcampbel">Directory:facultyName</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">S<span class="sr-only">S</span></a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="/faculty/jcampbel">Directory:facultyName</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">T<span class="sr-only">T</span></a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="/faculty/jcampbel">Directory:facultyName</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">U<span class="sr-only">U</span></a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="/faculty/jcampbel">Directory:facultyName</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">V<span class="sr-only">V</span></a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="/faculty/jcampbel">Directory:facultyName</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">W<span class="sr-only">W</span></a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="/faculty/jcampbel">Directory:facultyName</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">X<span class="sr-only">X</span></a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="/faculty/jcampbel">Directory:facultyName</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Y<span class="sr-only">Y</span></a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="/faculty/jcampbel">Directory:facultyName</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Z<span class="sr-only">Z</span></a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="/faculty/jcampbel">Directory:facultyName</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+
+  <button onclick="checkCookie()">Search for Faculty Members</button>
+  <button onclick="setCookie('faculty', 'jmays5', 365)">Justin Mays</button>
+  <button onclick="setCookie('faculty', 'jbooth3', 365)">Jonathan Booth</button>
+</body>
+
+</html>

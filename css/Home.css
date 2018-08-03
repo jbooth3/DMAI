@@ -1,0 +1,228 @@
+
+body {}
+.row:before, row:after{
+    display: inline-block;
+}
+.row {
+  margin: 0px !important;
+  padding: 0px !important;
+}
+
+.header {
+  background: #fff;
+  border-bottom: thick #092c74 solid;
+  margin-top: 10px;
+  padding-bottom: 10px;
+}
+#headerImg{
+  height:auto;
+  width:50%;
+  max-width:350px;
+  padding: 10px 0px 10px 10px;
+}
+.Faculty {
+  margin: 0px !important;
+  padding: 0px !important;
+}
+
+.navbar-header {
+  padding-left: 10px;
+  font-weight: 900;
+  font-size: 20px;
+  color: #092c74 !important;
+}
+
+.navbar {
+  margin-bottom: 0px !important;
+  padding: 0px !important;
+}
+
+.navbar-nav {
+  margin: 0;
+  padding-left: 0%;
+}
+
+.navbar-expand-sm .navbar-nav .nav-link {
+  padding-right: auto;
+  padding-left: auto;
+}
+
+.navbar-expand-sm .navbar-light .bg-light {}
+
+div.Banner {
+  height: 350px;
+  width: 35%;
+  margin: 0 !important;
+  padding: 0 !important;
+  background: url("../img/bg1.jpg");
+  background-size: cover;
+  /* <------ */
+  background-repeat: no-repeat;
+  background-position: center center;
+  color: #fff;
+  font-size: 1.5rem;
+  text-shadow: 2px 2px #000;
+}
+
+.tint {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  width: auto;
+}
+
+.photo {
+  text-align: -webkit-center;
+}
+
+#photo {
+  z-index: 1;
+  padding: 0px;
+  margin-top: 20px;
+  border-radius: 25px;
+  max-height: 315px;
+  max-width: 200px;
+  min-height: 105px;
+  min-width: 100px;
+     box-shadow: 8px 8px 5px #000;
+    text-align: -webkit-center;
+  /*border: 5px solid #092c74;*/
+}
+#genInfo{
+  margin-top: 25px;
+  font-size: 20px;
+  font-weight: 600;
+  text-shadow: 2px 2px #000;
+  height: 100%;
+  /*border-left: solid 1px #fff;*/
+}
+#Profile {
+  text-align: center;
+}
+
+.profileButtons {
+  margin: 0px;
+  padding: 10px;
+  text-align: center;
+  color: #092c74;
+    display: inline-block !important;
+}
+
+.far, .fas {
+  color: #092c74;
+  font-size: 350%;
+}
+#Biography,#Credentials,#Scholarships,#Schedule,#Service{
+  background-color: #fff;
+}
+.panel-body{
+  margin-top: 0px;
+}
+
+
+/* Small devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 575px) {
+  .row {
+    margin: 0px !important;
+    padding: 0px !important;
+  }
+  .header {
+    background: #fff;
+    border-bottom: thick #092c74 solid;
+  }
+  .Faculty {
+    margin: 0px !important;
+    padding: 0px !important;
+    float: left;
+  }
+  .navbar-header {
+    font-weight: 900;
+    font-size: 20px;
+    color: #092c74 !important;
+  }
+  .navbar {
+    margin-bottom: 0px !important;
+    padding: 0px !important;
+  }
+  .navbar-nav {
+    margin: 0;
+    padding-left: 0%;
+  }
+  .navbar-expand-sm .navbar-nav .nav-link {
+    padding-right: auto;
+    padding-left: auto;
+  }
+  .navbar-expand-sm .navbar-light .bg-light {}
+  div.Banner {
+    height: 450px;
+    width: 100%;
+    margin: 0 !important;
+    padding: 0 !important;
+    background: url("../img/bg1.jpg");
+    background-size: cover;
+    /* <------ */
+    background-repeat: no-repeat;
+    background-position: center center;
+    color: #fff;
+    font-size: 1.5rem;
+    text-shadow: 2px 2px #000;
+  }
+  .tint {
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 100%;
+    width: auto;
+  }
+  .photo {
+    text-align: -webkit-center;
+  }
+  #photo {
+    z-index: 1;
+    padding: 0px;
+    margin-top: 20px;
+    max-width: 25%;
+    max-height: 100px;
+    border: 1px solid #092c74;
+/*border-radius: 15px 50px 30px !mportant;*/
+    text-align: -webkit-center;
+  }
+  #genInfo{
+    margin-top: 25px;
+    font-size: 16px;
+    font-weight: 600;
+    text-shadow: 2px 2px #000;
+    height: 100%;
+    text-align: center;
+    /*border-left: solid 1px #fff;*/
+  }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) and (min-width: 576px) {
+   #genInfo{
+    margin-left: -25px;
+  }
+
+.navbar-header {
+  padding-left: 20px;
+  font-weight: 900;
+  font-size: 20px;
+  color: #092c74 !important;
+}
+
+.navbar {
+  margin-bottom: 0px !important;
+  padding: 0px !important;
+}
+
+.navbar-nav {
+  margin: 0;
+  padding-left: 0%;
+}
+
+.navbar-expand-sm .navbar-nav .nav-link {
+  padding-right: auto;
+  padding-left: auto;
+}
+
+.navbar-expand-sm .navbar-nav .nav-link {
+    padding-right: .0rem !important;
+    padding-left: .5rem;
+}

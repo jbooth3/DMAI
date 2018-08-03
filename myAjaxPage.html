@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>DMAI JSON WebProfile1</title>
+  <!--bootstrap-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <!--ajax-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+
+  <!--script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/home.css">
+
+
+
+  <script>
+  //
+    function getCookie(cname) {
+      var name = cname + "=";
+      var decodedCookie = decodeURIComponent(document.cookie);
+      var ca = decodedCookie.split(';');
+      for (var i = 0; i < ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') {
+          c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+          document.cookie = "faculty=; expires=Sat, 24 Jun 1922 00:00:00 UTC; path=/;";
+          return c.substring(name.length, c.length);
+        }
+      }
+      return "";
+    }
+  </script>
+</head>
+
+<body onload="loadDoc(getCookie('faculty'));">
+  <!--header-->
+  <div class="row">
+    <div class="header col-sm-12">
+
+      <div class="col-md-3 .col-md-offset-3-">
+        <img src="#" alt="CSU logo" height="auto" width="350px">
+      </div>
+    </div>
+  </div>
+
+  <!--faculty listing-->
+  <div class="row">
+    <div class="col-md-12 Faculty">
+      <nav class="navbar navbar-expand-sm navbar-light bg-light">
+        <a class="navbar-header align-self-left">Faculty</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span >A-Z</span></button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav" style="text-align: -webkit-center;">
+            <li class="nav-item">
+              <a class="nav-link " data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">A<span class="sr-only">A</span></a>
+              <div class="dropdown-menu">
+                <button class="dropdown-item" onclick="loadDoc('jbooth3')">Jonathan Booth</button>
+                <div role="separator" class="dropdown-divider"></div>
+                <button class="dropdown-item" onclick="loadDoc('jmays5')">Justin Mays</button>
+                <div role="separator" class="dropdown-divider"></div>
+                <button class="dropdown-item" href="/faculty/aagyeman">Augustine Agyeman</button>
+                <div role="separator" class="dropdown-divider"></div>
+                <button class="dropdown-item" href="/faculty/sakhtar">Shakil Akhtar</button>
+                <div role="separator" class="dropdown-divider"></div>
+                <button class="dropdown-item" href="/faculty/dallen37">Denise Allen</button>
+                <div role="separator" class="dropdown-divider"></div>
+                <button class="dropdown-item" href="/faculty/jallen74">Jason Allen</button>
+                <div role="separator" class="dropdown-divider"></div>
+                <button class="dropdown-item" href="/faculty/bamsden">Brian Amsden</button>
+                <div role="separator" class="dropdown-divider"></div>
+                <button class="dropdown-item" href="/faculty/panderso">Patricia Anderson</button>
+                <div role="separator" class="dropdown-divider"></div>
+                <button class="dropdown-item" href="/faculty/tandre">Thomas Andre</button>
+                <div role="separator" class="dropdown-divider"></div>
+                <button class="dropdown-item" href="/faculty/dattick">Dennis Attick</button>
+                <div role="separator" class="dropdown-divider"></div>
+                <button class="dropdown-item" href="/faculty/aayuk">Augustine Ayuk</button>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">B<span class="sr-only">B</span></a>
+              <div class="dropdown-menu">
+                <button class="dropdown-item" href="/faculty/sbailey21">Scott Bailey</button>
+                <div role="separator" class="dropdown-divider"></div>
+                <button class="dropdown-item" href="/faculty/hbanke">Harold Banke</button>
+                <div role="separator" class="dropdown-divider"></div>
+                <button class="dropdown-item" href="/faculty/cbarnes2">Christopher Barnes</button>
+                <div role="separator" class="dropdown-divider"></div>
+                <button class="dropdown-item" href="/faculty/gbarnes">Wanda Barnes</button>
+                <div role="separator" class="dropdown-divider"></div>
+                <button class="dropdown-item" href="/faculty/lbarthol">Lisa Bartholow</button>
+                <div role="separator" class="dropdown-divider"></div>
+                <button class="dropdown-item" href="/faculty/rbates4">Rodger Bates</button>
+                <div role="separator" class="dropdown-divider"></div>
+                <button class="dropdown-item" href="/faculty/rbell13">Richard Bell</button>
+                <div role="separator" class="dropdown-divider"></div>
+                <button class="dropdown-item" href="/faculty/sbennettwalker">Stephanie Bennett-Walker</button>
+                <div role="separator" class="dropdown-divider"></div>
+                <button class="dropdown-item" href="/faculty/jbergen">Jennie Bergen</button>
+                <div role="separator" class="dropdown-divider"></div>
+                <button class="dropdown-item" href="/faculty/kbilbeisi">Khamis Bilbeisi</button>
+                <div role="separator" class="dropdown-divider"></div>
+                <button class="dropdown-item" href="/faculty/ablack">Amy Black</button>
+                <div role="separator" class="dropdown-divider"></div>
+                <button class="dropdown-item" href="/faculty/fbloom">Frederick Bloom</button>
+                <div role="separator" class="dropdown-divider"></div>
+                <button class="dropdown-item" href="/faculty/vbonner">Virginia Bonner</button>
+                <div role="separator" class="dropdown-divider"></div>
+                <button class="dropdown-item" href="/faculty/ebonomo">Elizabeth Bonomo</button>
+                <div role="separator" class="dropdown-divider"></div>
+                <button class="dropdown-item" href="/faculty/rbonser">Randall Bonser</button>
+                <div role="separator" class="dropdown-divider"></div>
+                <button class="dropdown-item" href="/faculty/lbooth">Larry Booth</button>
+                <div role="separator" class="dropdown-divider"></div>
+                <button class="dropdown-item" href="/faculty/bboroson">Bram Boroson</button>
+                <div role="separator" class="dropdown-divider"></div>
+                <button class="dropdown-item" href="/faculty/jboudell">Jere Boudell</button>
+                <div role="separator" class="dropdown-divider"></div>
+                <button class="dropdown-item" href="/faculty/lbracket">Lou Brackett</button>
+                <div role="separator" class="dropdown-divider"></div>
+                <button class="dropdown-item" href="/faculty/mbradshaw5">Mark Bradshaw</button>
+                <div role="separator" class="dropdown-divider"></div>
+                <button class="dropdown-item" href="/faculty/ebridges">Eric Bridges</button>
+                <div role="separator" class="dropdown-divider"></div>
+                <button class="dropdown-item" href="/faculty/bbuckley1">Benjamin Buckley</button>
+                <div role="separator" class="dropdown-divider"></div>
+                <button class="dropdown-item" href="/faculty/sburnett">Stephen Burnett</button>
+                <div role="separator" class="dropdown-divider"></div>
+                <button class="dropdown-item" href="/faculty/cburton">Christie Burton</button>
+                <div role="separator" class="dropdown-divider"></div>
+                <button class="dropdown-item" href="/faculty/mbutler20">Marcia Butler</button>
+                <div role="separator" class="dropdown-divider"></div>
+                <button class="dropdown-item" href="/faculty/bbyrd">Brigitte Byrd</button>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">C<span class="sr-only">C</span></a>
+              <div class="dropdown-menu">
+                <button class="dropdown-item" href="/faculty/jcampbel">John Campbell</button>
+                <div role="separator" class="dropdown-divider"></div>
+                <button class="dropdown-item" href="/faculty/kchaney7">Kevin Chaney</button>
+                <div role="separator" class="dropdown-divider"></div>
+                <button class="dropdown-item" href="/faculty/achang1">Annalisa Chang</button>
+                <div role="separator" class="dropdown-divider"></div>
+                <button class="dropdown-item" href="/faculty/pchang">Pearl Chang</button>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">D<span class="sr-only">D</span></a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="/faculty/jcampbel">Directory:facultyName</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">E<span class="sr-only">E</span></a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="/faculty/jcampbel">Directory:facultyName</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">F<span class="sr-only">F</span></a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="/faculty/jcampbel">Directory:facultyName</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">G<span class="sr-only">G</span></a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="/faculty/jcampbel">Directory:facultyName</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">H<span class="sr-only">H</span></a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="/faculty/jcampbel">Directory:facultyName</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">I<span class="sr-only">I</span></a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="/faculty/jcampbel">Directory:facultyName</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">J<span class="sr-only">J</span></a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="/faculty/jcampbel">Directory:facultyName</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">K<span class="sr-only">K</span></a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="/faculty/jcampbel">Directory:facultyName</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">L<span class="sr-only">L</span></a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="/faculty/jcampbel">Directory:facultyName</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">M<span class="sr-only">M</span></a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="/faculty/jcampbel">Directory:facultyName</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">N<span class="sr-only">N</span></a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="/faculty/jcampbel">Directory:facultyName</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">O<span class="sr-only">O</span></a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="/faculty/jcampbel">Directory:facultyName</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">P<span class="sr-only">P</span></a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="/faculty/jcampbel">Directory:facultyName</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Q<span class="sr-only">Q</span></a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="/faculty/jcampbel">Directory:facultyName</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">R<span class="sr-only">R</span></a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="/faculty/jcampbel">Directory:facultyName</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">S<span class="sr-only">S</span></a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="/faculty/jcampbel">Directory:facultyName</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">T<span class="sr-only">T</span></a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="/faculty/jcampbel">Directory:facultyName</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">U<span class="sr-only">U</span></a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="/faculty/jcampbel">Directory:facultyName</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">V<span class="sr-only">V</span></a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="/faculty/jcampbel">Directory:facultyName</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">W<span class="sr-only">W</span></a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="/faculty/jcampbel">Directory:facultyName</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">X<span class="sr-only">X</span></a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="/faculty/jcampbel">Directory:facultyName</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Y<span class="sr-only">Y</span></a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="/faculty/jcampbel">Directory:facultyName</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Z<span class="sr-only">Z</span></a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="/faculty/jcampbel">Directory:facultyName</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+
+
+
+
+  <!--Profile Banner-->
+  <div class="row">
+    <div class="Banner col-sm-12">
+      <div class="row tint">
+        <div class="col-sm-6 d-flex justify-content-center">
+          <img id="photo" src="./img/pic.jpg" style="width:100%; height:auto;" class="rounded" alt="profile picture">
+        </div>
+        <div class="col-sm-6 p-2 text-nowrap" id="genInfo">
+          <div class="" id="name">first and last name</div>
+          <div id="title">title</div>
+          <div id="phone">(555) 555-5555</div>
+          <div id="email">myName@email.com</div>
+          <hr>
+          <div id="office">UC 555</div>
+          <div id="dept">department</div>
+          <div id="college">college</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Profile toggle-buttons-->
+  <div class="row">
+    <div class="col-sm-12  profileButtons">
+      <button id="button" class="btn btn-default" onclick="showDiv('Biography');"><i class="far fa-newspaper"></i><br> Biography</button>
+      <button id="button" class="btn btn-default" onclick="showDiv('Credentials');"><i class="far fa-address-card"></i><br> Credentials</button>
+      <button id="button" class="btn btn-default" onclick="showDiv('Schedule');"><i class="far fa-calendar-alt" ></i><br> Schedule</button>
+      <button id="button" class="btn btn-default" onclick="showDiv('Scholarships');"><i class="fas fa-award" ></i><br> Scholarships</button>
+      <button id="button" class="btn btn-default" onclick="showDiv('Service');"><i class="far fa-handshake" ></i><br> Service</button>
+    </div>
+  </div>
+
+  <!--Profile Body-->
+  <div class="row">
+    <div class="col-sm-12" id="Profile">
+      <div class="section animated fadeIn" style="text-align:center;" id="Biography">
+        <h1>Biography</h1>
+        <p>ajax call</p>
+      </div>
+      <div class="section animated fadeIn" id="Credentials">
+        <h1>Credentials</h1>
+        <p>ajax call</p>
+      </div>
+      <div class="section animated fadeIn" id="Schedule">
+        <h1>Schedule</h1>
+        <p>ajax call</p>
+      </div>
+      <div class="section animated fadeIn" id="Scholarships">
+        <h1>Scholarships</h1>
+        <p>ajax call</p>
+      </div>
+      <div class="section animated fadeIn" id="Service">
+        <h1>Service</h1>
+        <p>ajax call</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    showDiv("Biography"); //loads an initial table
+    function showDiv(tableName) { //accepts new table basaed on users mouseclick
+      "use strict";
+      var j, i; //used for loop iterations
+      var x = document.getElementsByClassName("fadeIn"); //w-3 styling
+      var x = document.getElementsByClassName("section"); //loads array with list elements
+
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      document.getElementById(tableName).style.display = "block";
+      document.getElementById(tableName).style.textAlign = "-webkit-center";
+      document.getElementById(tableName).style.padding = "10px 10px 10px 10px";
+      document.getElementById(tableName).style.boxShadow = "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)";
+
+    }
+  //Get parameter value
+    function getParameterByName(name, url) {
+      if (!url) url = window.location.href;
+      name = name.replace(/[\[\]]/g, "\\$&");
+      var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+        results = regex.exec(url);
+      if (!results) return null;
+      if (!results[2]) return '';
+      document.getElementById("Biography").children[1].innerHTML = decodeURIComponent(results[2].replace(/\+/g, " "));
+      return decodeURIComponent(results[2].replace(/\+/g, " "));
+
+    }
+    // Get the parameter variable value
+    var facultyName = getParameterByName('id');
+    function loadDoc(cvalue) {
+      //if cookie value is null use param value
+      if(cvalue == null || cvalue == undefined || cvalue == ""){
+        var id = facultyName;
+      }else{
+        id = cvalue;
+      }
+      // Parse the URL parameter
+      var xhttp = new XMLHttpRequest();
+      xhttp.open("GET", "faculty.json", true);
+      xhttp.send();
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+          var obj = JSON.parse(this.responseText);
+          //update page content
+          document.getElementById("photo").src = obj.faculty[id].profilePic;
+          document.getElementById("name").innerHTML = obj.faculty[id].generalInfo.fname + " " + obj.faculty[id].generalInfo.lname;
+          document.getElementById("title").innerHTML = obj.faculty[id].generalInfo.title;
+          document.getElementById("phone").innerHTML = obj.faculty[id].generalInfo.phone;
+          document.getElementById("email").innerHTML = obj.faculty[id].generalInfo.email;
+
+          document.getElementById("office").innerHTML = obj.faculty[id].generalInfo.office;
+          document.getElementById("dept").innerHTML = obj.faculty[id].generalInfo.department;
+          document.getElementById("college").innerHTML = obj.faculty[id].generalInfo.college;
+
+          document.getElementById("Biography").children[1].innerHTML = obj.faculty[id].biography;
+          document.getElementById("Credentials").children[1].innerHTML = obj.faculty[id].credentials.education;
+          document.getElementById("Schedule").children[1].innerHTML = obj.faculty[id].schedule['fall2018'];
+          document.getElementById("Scholarships").children[1].innerHTML = obj.faculty[id].scholarship.publications;
+          document.getElementById("Service").children[1].innerHTML = obj.faculty[id].service.public;
+
+        }
+      };
+
+    }
+  </script>
+
+</body>
+
+</html>

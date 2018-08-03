@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <!--ajax-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/index.css">
+
+  <title>DMAI XML WebProfile2</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="offcanvas.css" rel="stylesheet">
+
+  <!-- Add icon library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+  </style>
+</head>
+
+<body class="">
+
+  <!--header-->
+  <div class="row">
+    <div class="header col-sm-12">
+
+      <div class="col-md-3 .col-md-offset-3-">
+        <img id="headerImg" src="#" alt="CSU logo"></div>
+    </div>
+  </div>
+  <!--breadcrumbs-->
+  <div class="row">
+    <div class="col-md-12">
+      <p><a href="#">Home/</a> <a href="">Faculty/</a> <a href="#">John Doe</a></p>
+    </div>
+  </div>
+
+  <!--cardAndTabs d-flex justify-content-center-->
+  <div class="row">
+    <!--card-->
+    <div class="col-sm-3" style="text-align:center;">
+      <div class="row genInfo tint" style="text-align:center;">
+        <div class="row .col-md-offset-1 photo" style="text-align:center; display: block;">
+          <img id="photo" src="./img/pic.jpg" style="width:100%; height:auto; text-align:center;" class="rounded" alt="profile picture">
+        </div>
+        <div class="row p-2 text-nowrap" id="genInfo" style="display: block; text-align:center;">
+          <div class="" id="name">first and last name</div>
+          <div id="title">title</div>
+          <div id="phone">(555) 555-5555</div>
+          <div id="email">myName@email.com</div>
+          <hr>
+          <div id="office">UC 555</div>
+          <div id="dept">department</div>
+          <div id="college">college</div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="card col-sm-4">
+
+      <span class="cardtab" ><i class="far fa-handshake" ></i><br>General Information</span>
+
+      <img id="profilePic" src="./img/pic.jpg" alt="John">
+      <h1 id="name">fname lname</h1>
+      <p id="title">title</p>
+      <p id="dept">department</p>
+      <p id="college">Clayton State University</p>
+      <a href="#"><i class="fa fa-phone"></i></a><span class="iconText">(555) 555-5555</span>
+      <a href="#"><i class="fa fa-envelope"></i></a><span class="iconText">myName@email.com</span>
+      <a href="#"><i class="fas fa-map-marker"></i></a><span class="iconText">office 324</span>
+      <p><button>Contact</button></p>
+
+    </div> -->
+
+    <div class="col-sm-9">
+      <button class="tablink" onclick="openPage('Biography', this, '')" id="defaultOpen"><i class="far fa-newspaper"></i><br><span>Biography</span></button>
+      <button class="tablink" onclick="openPage('Credentials', this, '')"><i class="far fa-address-card"></i><br><span>Credentials</span></button>
+      <button class="tablink" onclick="openPage('Scholarships', this, '')"><i class="fas fa-award" ></i><br><span>Scholarships</span></button>
+      <button class="tablink" onclick="openPage('Schedule', this, '')"><i class="far fa-calendar-alt" ></i><br><span>Schedule</span></button>
+      <button class="tablink" onclick="openPage('Service', this, '')"><i class="far fa-handshake" ></i><br><span>Service</span></button>
+
+
+      <div id="Biography" class="tabcontent">
+        <h3>Biography</h3>
+
+        <p class="panel-body ">A little something about me. Lorem ipsum dolor sit amet, veniam suavitate cu sea. Pro ea magna nemore concludaturque. No ubique adolescens scriptorem his, pro te consul mandamus explicari. At laoreet eleifend vix, te dicit denique prodesset pri.
+          In pri malis albucius, sed debet impedit dolorem ad. In harum scaevola praesent quo, duo at quando maiestatis dissentias. Everti argumentum nec id, mea veri tritani quaerendum cu. Nec melius commodo feugiat an. Alterum menandri explicari nam
+          an, rebum dissentiet dissentiunt eos ut. Vim utamur labitur nominavi eu, eos nihil virtute an. At omnium voluptatibus usu, ex nonumes iudicabit interesset est. Quas consectetuer ne mei, te ius meis mutat tempor. Eirmod antiopam repudiare ne
+          qui. At diam mutat mentitum vim, te sed saperet ceteros, pri ex eius aliquip sensibus. Porro etiam cu ius, per id exerci nostrum. Cum id putent noluisse, sumo brute eu duo. Ei propriae menandri postulant sea, tollit patrioque rationibus ad eum,
+          ut nullam veritus detracto vel. Volumus propriae nam in, imperdiet gubergren ex has. Ut quo wisi vocent expetendis. Justo summo voluptua et nam, ut ius quot labore, usu etiam elaboraret cu. Qui porro concludaturque ex, at vim atqui philosophia,
+          te nostro denique mei. In choro deseruisse est. Eam oporteat detraxit definitiones in, ex partem convenire scribentur vis. Mea mandamus instructior at. Ut eos amet abhorreant efficiantur, vix ad legere expetendis, te minim inermis mel. Est nemore
+          option no, ex usu errem sensibus similique. Vel at erat vulputate, vim ea liber nullam. Ad cum tation option. Te eius errem aperiri mei, vocent signiferumque et mei, iudico aperiri fabellas eos id. Ius zril antiopam erroribus eu, nam dolor maluisset
+          accommodare ut. Id populo appareat has, ad ius omnis nostrud abhorreant. Corpora imperdiet rationibus ea has, ad audiam eripuit his, pro justo doming tractatos at. Dicta semper cum ad. Augue iisque antiopam sit ut. Nec in doming blandit apeirian,
+          vel cu minimum consequuntur, minim mundi ne vix. Purto duis utinam vis ad, ei expetenda gubergren vix. Et quis denique prodesset mei, in usu quem regione. Eum ei albucius rationibus, mea no homero suscipit, cum ea exerci fuisset detraxit. Eu
+          denique mentitum per, an cum suas iudico regione. Ut per laoreet phaedrum, qui dicunt epicuri maiestatis ei, simul iudico virtute usu et. Magna tritani an qui, veri deterruisset ut duo, pri cu molestie invidunt erroribus. Eu cum docendi consetetur.
+          Harum eripuit perfecto duo cu, no munere integre pri, at qui omnis vitae. Duo vocent dissentiet ex, per docendi adolescens in. Modo euismod ponderum et qui, id adhuc admodum interesset eum. Summo doctus nam ei. Ex timeam numquam persecuti ius,
+          mea at odio fabellas, no velit graeci equidem est. Sed audire principes voluptaria cu, elitr impedit nominati per no, etiam partem eu his. Natum rationibus cu sit. Usu facete interpretaris et. Te vis munere salutandi abhorreant, summo omnium
+          ei eos.</div>
+      </p>
+
+      <div id="Credentials" class="tabcontent">
+        <h3>Credentials</h3>
+        <p>My education and certifications. Lorem ipsum dolor sit amet, veniam suavitate cu sea. Pro ea magna nemore concludaturque. No ubique adolescens scriptorem his, pro te consul mandamus explicari. At laoreet eleifend vix, te dicit denique prodesset
+          pri. In pri malis albucius, sed debet impedit dolorem ad. In harum scaevola praesent quo, duo at quando maiestatis dissentias. Everti argumentum nec id, mea veri tritani quaerendum cu. Nec melius commodo feugiat an. Alterum menandri explicari
+          nam an, rebum dissentiet dissentiunt eos ut. Vim utamur labitur nominavi eu, eos nihil virtute an. At omnium voluptatibus usu, ex nonumes iudicabit interesset est. Quas consectetuer ne mei, te ius meis mutat tempor. Eirmod antiopam repudiare
+          ne qui. </p>
+          <div id="Education"></div>
+                    <div id="Certifications"></div>
+                              <div id="Awards"></div>
+      </div>
+
+      <div id="Scholarships" class="tabcontent">
+        <h3>Scholarships</h3>
+        <p>My contributions such as publications and grants. Lorem ipsum dolor sit amet, veniam suavitate cu sea. Pro ea magna nemore concludaturque. No ubique adolescens scriptorem his, pro te consul mandamus explicari. At laoreet eleifend vix, te dicit
+          denique prodesset pri. In pri malis albucius, sed debet impedit dolorem ad. In harum scaevola praesent quo, duo at quando maiestatis dissentias. Everti argumentum nec id, mea veri tritani quaerendum cu. Nec melius commodo feugiat an. Alterum
+          menandri explicari nam an, rebum dissentiet dissentiunt eos ut. Vim utamur labitur nominavi eu, eos nihil virtute an. At omnium voluptatibus usu, ex nonumes iudicabit interesset est. Quas consectetuer ne mei, te ius meis mutat tempor. Eirmod
+          antiopam repudiare ne qui. At diam mutat mentitum vim, te sed saperet ceteros, pri ex eius aliquip sensibus. Porro etiam cu ius, per id exerci nostrum. Cum id putent noluisse, sumo brute eu duo. Ei propriae menandri postulant sea, tollit patrioque
+          rationibus ad eum, ut nullam veritus detracto vel. Volumus propriae nam in, imperdiet gubergren ex has. Ut quo wisi vocent expetendis. Justo summo voluptua et nam, ut ius quot labore, usu etiam elaboraret cu. Qui porro concludaturque ex, at
+          vim atqui philosophia, te nostro denique mei. In choro deseruisse est. Eam oporteat detraxit definitiones in, ex partem convenire scribentur vis. Mea mandamus instructior at. Ut eos amet abhorreant efficiantur, vix ad legere expetendis, te minim
+          inermis mel. Est nemore option no, ex usu errem sensibus similique. Vel at erat vulputate, vim ea liber nullam. Ad cum tation option. Te eius errem aperiri mei, vocent signiferumque et mei, iudico aperiri fabellas eos id. Ius zril antiopam erroribus
+          eu, nam dolor maluisset accommodare ut. Id populo appareat has, ad ius omnis nostrud abhorreant. Corpora imperdiet rationibus ea has, ad audiam eripuit his, pro justo doming tractatos at. Dicta semper cum ad. Augue iisque antiopam sit ut. Nec
+          in doming blandit apeirian, vel cu minimum consequuntur, minim mundi ne vix. Purto duis utinam vis ad, ei expetenda gubergren vix. Et quis denique prodesset mei, in usu quem regione. Eum ei albucius rationibus, mea no homero suscipit, cum ea
+          exerci fuisset detraxit. Eu denique mentitum per, an cum suas iudico regione. Ut per laoreet phaedrum, qui dicunt epicuri maiestatis ei, simul iudico virtute usu et. Magna tritani an qui, veri deterruisset ut duo, pri cu molestie invidunt erroribus.
+          Eu cum docendi consetetur. Harum eripuit perfecto duo cu, no munere integre pri, at qui omnis vitae. Duo vocent dissentiet ex, per docendi adolescens in. Modo euismod ponderum et qui, id adhuc admodum interesset eum. Summo doctus nam ei. Ex
+          timeam numquam persecuti ius, mea at odio fabellas, no velit graeci equidem est. Sed audire principes voluptaria cu, elitr impedit nominati per no, etiam partem eu his. Natum rationibus cu sit. Usu facete interpretaris et. Te vis munere salutandi
+          abhorreant, summo omnium ei eos.</p>
+      </div>
+
+      <div id="Schedule" class="tabcontent">
+        <h3>Schedule</h3>
+        <p>When and what we teach. Lorem ipsum dolor sit amet, veniam suavitate cu sea. Pro ea magna nemore concludaturque. No ubique adolescens scriptorem his, pro te consul mandamus explicari. At laoreet eleifend vix, te dicit denique prodesset pri. In
+          pri malis albucius, sed debet impedit dolorem ad. In harum scaevola praesent quo, duo at quando maiestatis dissentias. Everti argumentum nec id, mea veri tritani quaerendum cu. Nec melius commodo feugiat an. Alterum menandri explicari nam an,
+          rebum dissentiet dissentiunt eos ut. Vim utamur labitur nominavi eu, eos nihil virtute an. At omnium voluptatibus usu, ex nonumes iudicabit interesset est. Quas consectetuer ne mei, te ius meis mutat tempor. Eirmod antiopam repudiare ne qui.
+          At diam mutat mentitum vim, te sed saperet ceteros, pri ex eius aliquip sensibus. Porro etiam cu ius, per id exerci nostrum. Cum id putent noluisse, sumo brute eu duo. Ei propriae menandri postulant sea, tollit patrioque rationibus ad eum, ut
+          nullam veritus detracto vel. Volumus propriae nam in, imperdiet gubergren ex has. Ut quo wisi vocent expetendis. Justo summo voluptua et nam, ut ius quot labore, usu etiam elaboraret cu. Qui porro concludaturque ex, at vim atqui philosophia,
+          te nostro denique mei. In choro deseruisse est. Eam oporteat detraxit definitiones in, ex partem convenire scribentur vis. Mea mandamus instructior at. Ut eos amet abhorreant efficiantur, vix ad legere expetendis, te minim inermis mel. Est nemore
+          option no, ex usu errem sensibus similique. Vel at erat vulputate, vim ea liber nullam. Ad cum tation option. Te eius errem aperiri mei, vocent signiferumque et mei, iudico aperiri fabellas eos id. Ius zril antiopam erroribus eu, nam dolor maluisset
+          accommodare ut. Id populo appareat has, ad ius omnis nostrud abhorreant. Corpora imperdiet rationibus ea has, ad audiam eripuit his, pro justo doming tractatos at. Dicta semper cum ad. Augue iisque antiopam sit ut. Nec in doming blandit apeirian,
+          vel cu minimum consequuntur, minim mundi ne vix. Purto duis utinam vis ad, ei expetenda gubergren vix. Et quis denique prodesset mei, in usu quem regione. Eum ei albucius rationibus, mea no homero suscipit, cum ea exerci fuisset detraxit. Eu
+          denique mentitum per, an cum suas iudico regione. Ut per laoreet phaedrum, qui dicunt epicuri maiestatis ei, simul iudico virtute usu et. Magna tritani an qui, veri deterruisset ut duo, pri cu molestie invidunt erroribus. Eu cum docendi consetetur.
+          Harum eripuit perfecto duo cu, no munere integre pri, at qui omnis vitae. Duo vocent dissentiet ex, per docendi adolescens in. Modo euismod ponderum et qui, id adhuc admodum interesset eum. Summo doctus nam ei. Ex timeam numquam persecuti ius,
+          mea at odio fabellas, no velit graeci equidem est. Sed audire principes voluptaria cu, elitr impedit nominati per no, etiam partem eu his. Natum rationibus cu sit. Usu facete interpretaris et. Te vis munere salutandi abhorreant, summo omnium
+          ei eos.</p>
+      </div>
+
+      <div id="Service" class="tabcontent">
+        <h3>Service</h3>
+        <p>Who we are and what we do. Lorem ipsum dolor sit amet, veniam suavitate cu sea. Pro ea magna nemore concludaturque. No ubique adolescens scriptorem his, pro te consul mandamus explicari. At laoreet eleifend vix, te dicit denique prodesset pri.
+          In pri malis albucius, sed debet impedit dolorem ad. In harum scaevola praesent quo, duo at quando maiestatis dissentias. Everti argumentum nec id, mea veri tritani quaerendum cu. Nec melius commodo feugiat an. Alterum menandri explicari nam
+          an, rebum dissentiet dissentiunt eos ut. Vim utamur labitur nominavi eu, eos nihil virtute an. At omnium voluptatibus usu, ex nonumes iudicabit interesset est. Quas consectetuer ne mei, te ius meis mutat tempor. Eirmod antiopam repudiare ne
+          qui. At diam mutat mentitum vim, te sed saperet ceteros, pri ex eius aliquip sensibus. Porro etiam cu ius, per id exerci nostrum. Cum id putent noluisse, sumo brute eu duo. Ei propriae menandri postulant sea, tollit patrioque rationibus ad eum,
+          ut nullam veritus detracto vel. Volumus propriae nam in, imperdiet gubergren ex has. Ut quo wisi vocent expetendis. Justo summo voluptua et nam, ut ius quot labore, usu etiam elaboraret cu. Qui porro concludaturque ex, at vim atqui philosophia,
+          te nostro denique mei. In choro deseruisse est. Eam oporteat detraxit definitiones in, ex partem convenire scribentur vis. Mea mandamus instructior at. Ut eos amet abhorreant efficiantur, vix ad legere expetendis, te minim inermis mel. Est nemore
+          option no, ex usu errem sensibus similique. Vel at erat vulputate, vim ea liber nullam. Ad cum tation option. Te eius errem aperiri mei, vocent signiferumque et mei, iudico aperiri fabellas eos id. Ius zril antiopam erroribus eu, nam dolor maluisset
+          accommodare ut. Id populo appareat has, ad ius omnis nostrud abhorreant. Corpora imperdiet rationibus ea has, ad audiam eripuit his, pro justo doming tractatos at. Dicta semper cum ad. Augue iisque antiopam sit ut. Nec in doming blandit apeirian,
+          vel cu minimum consequuntur, minim mundi ne vix. Purto duis utinam vis ad, ei expetenda gubergren vix. Et quis denique prodesset mei, in usu quem regione. Eum ei albucius rationibus, mea no homero suscipit, cum ea exerci fuisset detraxit. Eu
+          denique mentitum per, an cum suas iudico regione. Ut per laoreet phaedrum, qui dicunt epicuri maiestatis ei, simul iudico virtute usu et. Magna tritani an qui, veri deterruisset ut duo, pri cu molestie invidunt erroribus. Eu cum docendi consetetur.
+          Harum eripuit perfecto duo cu, no munere integre pri, at qui omnis vitae. Duo vocent dissentiet ex, per docendi adolescens in. Modo euismod ponderum et qui, id adhuc admodum interesset eum. Summo doctus nam ei. Ex timeam numquam persecuti ius,
+          mea at odio fabellas, no velit graeci equidem est. Sed audire principes voluptaria cu, elitr impedit nominati per no, etiam partem eu his. Natum rationibus cu sit. Usu facete interpretaris et. Te vis munere salutandi abhorreant, summo omnium
+          ei eos.</p>
+      </div>
+    </div>
+  </div>
+
+
+
+  <script>
+    function openPage(pageName, elmnt, color) {
+      // Hide all elements with class="tabcontent" by default */
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+
+      // Remove the background color of all tablinks/buttons
+      tablinks = document.getElementsByClassName("tablink");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].style.backgroundColor = "";
+      }
+
+      // Show the specific tab content
+      document.getElementById(pageName).style.display = "block";
+      document.getElementById(pageName).style.textAlign = "-webkit-center";
+
+      // Add the specific color to the button used to open the tab content
+      elmnt.style.backgroundColor = color;
+    }
+
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
+  </script>
+</body>
+
+</html>
